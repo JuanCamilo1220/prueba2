@@ -1,0 +1,370 @@
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+
+body{
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Especificaciones globales */
+
+a {
+    text-decoration: none;
+}
+h3{
+    font-size: 20px;
+}
+
+
+/* Recibidor de la pagina */
+
+header{
+    width: 100%;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+header .banner{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    z-index: -1;
+}
+
+/* Navegador */
+
+header nav{
+    margin-top:  10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+header nav .opciones a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+}
+
+/* Log in */
+
+.login{
+    display: flex;
+    width: 75px;
+    background-color: #4845d2;
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.login img{
+    width: 20px;
+}
+.login a{
+    color: black;
+    display: flex;
+}
+
+/* Texto del recibidor */
+
+header .texto1{
+    font-family: "Roboto";
+    width: 50%;
+    margin: auto;
+    h3{
+        font-size: 20px;
+    }
+    
+    margin-top: 100px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    
+}
+header .texto2{
+    font-family: "lato";
+    width: 30%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+header hr{
+    width: 30%;
+    color: white;
+}
+.texto span{
+    color: #4845d2; 
+}
+header .explore a{
+    width: 30%;
+    margin: auto;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* servicios ofrecidos */
+
+.servicios{
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.serv{
+    width: 33%;
+    height: 300px;
+    margin: 10px;
+    position: relative;
+}
+.serv img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.serv p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Sobre nosotros */
+
+.aboutus{
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    height: 1000px;
+}
+.aboutus img{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.sobre{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #eeeefb;
+    width: 50%;
+}
+
+/* p y ul de la seccion */
+
+.ttt{
+    margin-top: 20%;
+}
+.tt{
+    margin-bottom: 20%;
+}
+h2{
+    color: #4845d2;
+    font-size: 40px;
+}
+.sobre a{
+    display: flex;
+    width: 50%;
+    height: 50px;
+    color: #ffffff;
+    font-size: 15px;
+    background-color: #4845d2;
+    align-self: start;
+    border-radius: 10px;
+    padding-right: 40px;
+}
+.sobre a img{
+    width: 25%;
+    height: 50px;
+}
+
+/* Galeria */
+
+
+.galeria{
+    width: 90%;
+    margin: auto;
+}
+.gal2{
+    height: 75%;
+    display: grid;
+    grid-template-areas: 
+    "img1 img2 img3 img3"
+    "img1 img2 img5 img6"
+    "img1 img4 img4 img6";
+    grid-gap: 10px;
+}
+.gal2 div{
+    height: 100%;
+}
+.gal2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.img1{
+    grid-area: img1;
+}
+.img2{
+    grid-area: img2;
+}
+.img3{
+    grid-area: img3;
+}
+.img4{
+    grid-area: img4;
+}
+.img5{
+    grid-area: img5;
+}
+.img6{
+    grid-area: img6;
+}
+
+/* Concursos */
+
+.concursos{
+    width: 100%;
+    height: 1000px;
+    margin-top: 10px;
+    background-color: #f2fbff;
+}
+.concursos h3{
+    text-align: center;
+    font-size: 40px;
+}
+.padre{
+    display: flex;
+}
+.parte1{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.caja1 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+
+}
+.caja2{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+.subcaja{
+    width: 33%;
+    height: auto;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.subcaja img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    padding-bottom: 15px;
+}
+.parte2{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: start;
+}
+.parte2 hr{
+    width: 200%;
+
+}
+.subcaja2{
+    width: 100%;
+    height: 50%;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom: 15px;
+}
+.subcaja2 img{
+    width: 100%;
+    height: 200px;border-radius: 10px 10px 0 0;
+}
+.contenido a{
+    display: flex;
+    width: 100%;
+    border: #4845d2 1px solid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+/* footer */
+
+
+footer{
+    background-color: rgba(72, 69, 210, 0.8);
+    width: 100%;
+    color: #eeeefb;
+}
+.c1{
+    display: flex;
+}
+.lp{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.logo img{
+    width: 200px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.linkyfollow{
+    display: flex;
+}
+.links{
+    margin: 10px;
+    margin-left: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.links a{
+    color: #ffffff;
+}
+.follow{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-left: 300px;
+}
+.follow a{
+    color: #ffffff;
+}
+.derechos{
+    margin-left: 1100px;
+}
